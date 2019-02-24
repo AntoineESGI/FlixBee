@@ -15,10 +15,9 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
+Route::get('/login','LoginController@form');
+Route::post('/login','LoginController@processing');
 
-Route::get('/register', function () {
-    return view('register');
-});
+Route::get('/register', 'RegisterController@form');
+Route::post('/register', 'RegisterController@processing');
+
