@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+*{
+	font-family: 'Lato', sans-serif;
+}
+
+
+
+#logo{
+	width: 150px;
+	height: 75px;
+	opacity: 1;
+	margin-bottom: 8px;
+}
+
+#homeHeader{
+	background-image: url("../img/homeHeader.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: cover;
+	height: 500px;
+	position: relative;
+}
+
+nav{
+	opacity: 0.7;
+	position: fixed;
+	background: rgba(16, 28, 28, 0.5);
+}
+
+
+#myFooter {
+	background-color: #f0efea;
+	color:black;
+	width: 100%;
+	flex: 0 0 auto;
+	-webkit-flex: 0 0 auto;
+	margin-top: 20px;
+}
+
+#myFooter .footer-copyright{
+	background-color: #f0efea;
+	padding-top:3px;
+	padding-bottom:3px;
+	text-align: center;
+}
+
+#myFooter .footer-copyright p{
+	margin:10px;
+	color: #ccc;
+}
+
+#myFooter ul{
+	list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+
+}
+
+#myFooter h5{
+	font-size: 18px;
+    color: black;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter a{
+	color:black;
+	text-decoration: none;
+}
+
+#myFooter a:hover, #myFooter a:focus{
+	text-decoration: none;
+	color:white;
+}
+
+#myFooter .myCols{
+	text-align: center;
+}
+
+
+@media screen and (max-width: 767px){
+	#myFooter {
+		text-align: center;
+	}
+}
+
+
+html{
+	height: 100% !important;
+}
+
+body{
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	height: 100%;
+}
+
+.content{
+	flex: 1 0 auto;
+	-webkit-flex: 1 0 auto;
+	min-height: 200px;
+}
