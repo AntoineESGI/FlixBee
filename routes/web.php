@@ -21,3 +21,5 @@ Route::post('/login','LoginController@processing');
 Route::get('/register', 'RegisterController@form');
 Route::post('/register', 'RegisterController@processing');
 
+Route::get('/reservation', 'ReservationController@form');
+Route::post('/reservation', 'ReservationController@processing');
